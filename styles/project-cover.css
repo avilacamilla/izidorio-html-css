@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'Organetto-Regular';
+    src: url(../assets/fonts/Fontspring-DEMO-organetto-regular.otf) format('truetype');
+}
+@font-face {
+    font-family: Organetto-Bold;
+    src: url(../assets/fonts/Fontspring-DEMO-organetto-bold.otf) format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Organetto-Bold';
+}
+
+@media screen and (max-width: 600px) {
+   .container-project-cover {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: #191919;
+        background-image: url(../assets/images/bg-high-logo.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+   }
+   .container-background-project-cover {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    
+   }
+   .container-logo-projec-cover {
+        display: flex;
+        justify-content: center;
+        margin: 16rem 0 0 0;
+   }
+   .container-title-project-cover {
+        display: flex;
+        justify-content: center;
+   }
+   .logo-project-cover,
+   .title-image-project-cover {
+        width: 70%;
+   }
+   .container-arrow-roll-to {
+        margin: 0 0 1rem 0;
+   }
+   @keyframes scrollDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+   .btn-arrow-down {
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 8rem 0 0 0;
+    animation: scrollDown 2s infinite;
+   }
+   .image-arrow-down-roll {
+    width: 12%;
+   }
+
+   /*Seção de contato*/
+   .container-project-contact {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        width: 100%;
+        height: 80vh;
+        background-color: #191919;
+        background-image: url(../assets/images/bg-reforma.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+   }
+   .container-features-izidorio {
+        /* background-color: pink; */
+        display: flex;
+        flex-direction: column;
+        margin: 15rem 0 0 0;
+   }
+
+   .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* background-color: pink; */
+        width: 100%;
+   }
+   #title-ancor-to-ins {
+        display: flex;
+        gap: .3rem;
+        color: #fefefe;
+        text-decoration: none;
+   }
+}

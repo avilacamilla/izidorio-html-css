@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/project-cover.css">
+    <title>Rafael Izidorio - Fotografia</title>
+</head>
+<body>
+    <main class="container-project-cover">
+       <div class="container-background-project-cover">
+            <div class="container-logo-projec-cover">
+                <img 
+                    src="./assets/images/logo-branca-simples.png" 
+                    alt="Logo branca em formato de R fazendo referência ao fotógrafo Rafael Izidorio" 
+                    class="logo-project-cover">
+            </div>
+            <div class="container-title-project-cover">
+                <img 
+                    src="./assets/images/title-image.png" 
+                    alt="" 
+                    class="title-image-project-cover">
+            </div>
+       </div>
+       <div class="container-arrow-roll-to">
+            <a class="btn-arrow-down">
+                <img 
+                    src="./assets/images/arrow-down.png" 
+                    alt="" 
+                    class="image-arrow-down-roll">
+            </a>
+       </div>
+
+       <div class="container-project-contact">
+            <div class="container-features-izidorio">
+                <p class="features">
+                    Site em desenvolvimento...
+                </p>
+            </div>
+       </div>
+       <div class="footer">
+        <a 
+            id="title-ancor-to-ins" 
+            href="https://www.instagram.com/izidorio.rafael/"
+            target="_blank">
+            <img src="./assets/images/iconInstagram.svg" alt="" class="icon-instagram">izidorio.rafael
+        </a>
+       </div>
+    </main>
+    <script>
+        // Função para fazer scroll suave para o elemento com o ID "title-ancor-to-ins"
+        function scrollToElement(e) {
+            e.preventDefault(); // Impede o comportamento padrão do link
+            
+            const element = document.getElementById("title-ancor-to-ins");
+            
+            if (element) {
+                element.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+
+        // Adicionar um evento de clique ao link
+        const scrollLink = document.querySelector(".btn-arrow-down");
+        if (scrollLink) {
+            scrollLink.addEventListener("click", scrollToElement);
+        }
+    </script>
+</body>
+</html>
